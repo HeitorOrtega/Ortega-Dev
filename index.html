@@ -9,8 +9,9 @@
 </head>
 <body>
     <canvas id="backgroundCanvas"></canvas>
-    <div class="fundo"></div>
     <script src="js/script.js"></script>
+    <script src="js/dados.js"></script>
+    <div class="fundo"></div>
 
     <nav class="container">
         <ul class="menu">
@@ -46,17 +47,19 @@
                 <div class="caixa_info">
                     <h3 class="info_projetos">Smart Connect Car</h3>
                     <p class="paragrafo_projetos">
-                        Projeto realizado em um dos desafios da FIAP, na qual tinhamos que dar uma solução inovadora para o problema que a empresa Porto nos 
-                        passou, assim fazendo o projeto Smart Connect Car ser um sucesso.
+                        Site realizado para a empresa Smart Connect Car, que oferece serviços de rastreamento veicular,
+                        monitoramento 24 horas, bloqueio e recuperação de veículos para a FIAP no projeto Porto Seguro.
                     </p>
                 </div>
             </div>
             <div class="projetos_card">
-                <img src="img/projeto2.jpg" alt="projeto2" class="projeto_imagem">
+                <img src="img/projeto.jpg" alt="projeto2" class="projeto_imagem">
                 <div class="caixa_info">
-                    <h3 class="info_projetos">Loja de Carros</h3>
+                    <h3 class="info_projetos">Projeto Python</h3>
                     <p class="paragrafo_projetos">
-                        Uma página interativa com roteiros de carros, onde os usuários podem visualizar e comprar veículos de forma fácil e rápida.
+                    Um projeto totalmente feito em Python, com APIs e banco de dados, no qual havia um sistema de login, cadastro e vários outros recursos. 
+                    Este projeto foi desenvolvido como parte de um desafio em colaboração com a Porto Seguro e a FIAP.
+                    <a href="https://github.com/HeitorOrtega/Challenge-2024" target="_blank" class="link_projeto">Veja o projeto no GitHub</a>
                     </p>
                 </div>
             </div>
@@ -75,12 +78,12 @@
 
     <section id="Contato" class="contatos">
         <h2 class="contatos_titulo">Entre em Contato Comigo!</h2>
-        <form class="formulario_contato" id="formulario">
+        <form class="formulario_contato" id="formulario" onsubmit="enviar(event)">
             <div class="grupo_form">
-                <input placeholder="Nome" type="text" class="campo_form">
+                <input placeholder="Nome" type="text" class="campo_form" id="nome">
             </div>
             <div class="grupo_form">
-                <textarea placeholder="Digite sua mensagem" class="campo_form"></textarea>
+                <textarea placeholder="Digite sua mensagem" class="campo_form" id="mensagem"></textarea>
             </div>
             <div class="botao_form">
                 <button type="submit" class="botao_form">Enviar via WhatsApp</button>
