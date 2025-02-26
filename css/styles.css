@@ -73,9 +73,101 @@ body{
 }
 
 .foto_perfil{
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     box-shadow: 0 0 10px rgba(80, 70, 229, 0.4);
     border-radius: 50%;
     border: 4px solid var(--vidro);
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 25px;
+    color: var(--primaria);
+    font-weight: bold;
+}
+.subtitulo{
+    font-size: 1rem;
+    color : var(--claro);
+}
+
+.sobre{
+    padding: 6rem 2rem;
+}
+
+.titulo_sobre{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre_conteudo{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(53, 51, 51, 0.5);
+    box-shadow: 0 0 10px rgba(80, 70, 229, 0.4);
+}
+
+.sobre_paragrafo{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.projetos{
+    padding: 6rem 2rem;
+}
+
+.projetos_titulos{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+
+.projetos_card:hover{
+    box-shadow: 0 0 10px rgba(80, 70, 229, 0.4);
+    transform: translateY(-15px ) scale(1.2);
+}
+
+.projetos_caixa{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projetos_card{
+    background: rgba(53, 51, 51, 0.5);
+    border-radius: 16px;  
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--vidro);
+    box-shadow: 0 0 10px rgba(80, 70, 229, 0.4);   
+    overflow: hidden;
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projetos_imagem{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info_projetos{
+    font-size: 1.5rem;
+    color: var(--claro);
+    margin-top: 1rem;
+}
+
+.paragrafo_projetos{
+    font-size: 1rem;
+    color: var(--claro);
+    margin-top: 0.5rem;
 }
