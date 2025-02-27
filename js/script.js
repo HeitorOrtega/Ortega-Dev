@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const balls = [];
-const colors = ['#121E2C', '#0D0D0D', '#1A1A1A', '#2B1B38', '#f9f9f9'];
+const colors = ['#121E2C', '#0D0D0D', '#1A1A1A', '#2B1B38', '#3A1B38', '#4A1B38'];
 
 class Ball {
     constructor(x, y, dx, dy, radius, color) {
