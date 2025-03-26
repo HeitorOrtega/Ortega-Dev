@@ -362,15 +362,36 @@ body {
     }
 
     .projetos_caixa {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
     }
 
     .formulario_contato {
         width: 90%;
     }
-}
-
 @media (max-width: 480px) {
+    .projetos_caixa {
+        display: grid;
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .projeto_card {
+        margin: 0 auto; 
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
     .titulo_sobre, .projetos_titulos, .contatos_titulo {
         font-size: 1.5rem;
     }
